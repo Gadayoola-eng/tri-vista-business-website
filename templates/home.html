@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tri-Vista Business Solutions Ltd | Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Business.css') }}">
+</head>
+<body>
+
+g<div class="container">
+    
+<header class="hero">
+    <h1>Tri-Vista Business Solutions Ltd.</h1>
+    <p>Technology & business solutions that help you grow faster</p>
+    <div class="hero-buttons">
+        <a href="services.html" class="btn">Our Services</a>
+        <a href="contact.html" class="btn-outline">Contact Us</a>
+    </div>
+</header>
+
+<nav class="navbar">
+    <span class="logo">Tri-Vista</span>
+
+    <span id="menuToggle" class="menu-toggle">☰</span>
+
+    <div id="navLinks" class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/team">Team</a>
+        <a href="/contact">Contact</a>
+    </div>
+</nav>
+
+<section class="section">
+    <h2>Who We Are</h2>
+    <p>
+        Tri-Vista Business Solutions Ltd is a multi-purpose company providing
+        innovative tech services, business support, and supply solutions
+        tailored to modern needs.
+    </p>
+</section>
+
+<!-- SERVICES PREVIEW -->
+<section class="section light-bg">
+    <h2>What We Do</h2>
+
+    <div class="services">
+        <div class="card">
+            <h4>Tech Services</h4>
+            <p>Web Development, Mobile Apps, Networking, Digital Marketing.</p>
+        </div>
+
+        <div class="card">
+            <h4>Business & Supply</h4>
+            <p>Food Supply, Catering, Logistics, Business Support.</p>
+        </div>
+    </div>
+
+    <a href="services.html" class="btn center-btn">View All Services</a>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section">
+    <h2>Why Choose Tri-Vista</h2>
+    <ul class="features">
+        <li>✔ Professional & Reliable</li>
+        <li>✔ Affordable Solutions</li>
+        <li>✔ Customer-Focused Approach</li>
+        <li>✔ Timely Delivery</li>
+    </ul>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="cta">
+    <h2>Let’s Work Together</h2>
+    <p>Ready to grow your business? Let’s get started.</p>
+    <a href="contact.html" class="btn">Get in Touch</a>
+</section>
+
+<footer>
+    <p>© 2026 Tri-Vista Business Solutions Ltd.</p>
+</footer>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("menuToggle");
+    const links = document.getElementById("navLinks");
+
+    toggle.addEventListener("click", function () {
+        links.classList.toggle("show");
+    });
+});
+</script>
+<a href="https://wa.me/+2347064209935" class="whatsapp-float-text" target="_blank">
+    💬 Chat with us
+</a>
+</body>
+</html>

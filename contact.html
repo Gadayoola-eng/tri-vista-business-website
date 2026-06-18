@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tri-Vista Business Solutions Ltd | Contact</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="Business.css">
+</head>
+
+<body>
+<div class="container">
+
+<header>
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you</p>
+</header>
+
+<nav class="navbar">
+    <span class="logo">Tri-Vista</span>
+
+    <span id="menuToggle" class="menu-toggle">☰</span>
+
+    <div id="navLinks" class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<section class="section">
+    <h2>Send Us a Message</h2>
+<form id="contactForm">
+
+    <input type="text"
+           id="name"
+           placeholder="Your Name"
+           required>
+
+    <input type="email"
+           id="email"
+           placeholder="Your Email"
+           required>
+
+    <textarea id="message"
+              placeholder="Your Message"
+              required></textarea>
+
+    <button type="submit">
+        Send Message
+    </button>
+
+</form>
+</section>
+
+<footer>
+    <p>© 2026 Tri-Vista Business Solutions Ltd</p>
+</footer>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("menuToggle");
+    const links = document.getElementById("navLinks");
+
+    toggle.addEventListener("click", function () {
+        links.classList.toggle("show");
+    });
+});
+</script>
+<a href="https://wa.me/+2347064209935" class="whatsapp-float-text" target="_blank">
+    💬 Chat with us
+</a><script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+(function () {
+    emailjs.init({
+        publicKey: "J6sMDZ4L0-nVPpTds"
+    });
+})();
+
+document.getElementById("contactForm")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    emailjs.send(
+        "service_j37vf37",
+        "template_pasu836",
+        {
+            from_name: document.getElementById("name").value,
+            from_email: document.getElementById("email").value,
+            message: document.getElementById("message").value
+        }
+    )
+    .then(function(response) {
+
+        console.log("SUCCESS!", response);
+
+        alert("Message sent successfully!");
+
+        document.getElementById("contactForm").reset();
+
+    })
+    .catch(function(error) {
+
+        console.error("FAILED...", error);
+
+        alert("Failed to send message. Check console.");
+
+    });
+
+});
+</script>

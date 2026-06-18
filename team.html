@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tri-Vista Business Solutions Ltd | Our Team</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="Business.css">
+</head>
+<body>
+
+<div class="container">
+
+<header class="hero">
+    <h1>Our Team</h1>
+    <p>Meet the professionals behind Tri-Vista</p>
+</header>
+<!-- NAVIGATION -->
+<nav class="navbar">
+    <span class="logo">Tri-Vista</span>
+
+    <span id="menuToggle" class="menu-toggle">☰</span>
+
+  <div id="navLinks" class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+        
+    </div>
+</nav>
+
+<section class="team">
+    <h2>Meet Our Experts</h2>
+    <p class="team-subtitle">
+        A passionate team committed to delivering quality business and technology solutions.
+    </p>
+
+    <div class="team-container">
+        <div class="team-card">
+            <img src="ceo.png" alt="Chairman">
+            <h4> Mr Olusegun Patrick O.</h4>
+            <p> Chairman </p>
+        </div>
+
+        <div class="team-card">
+            <img src="dir.png" alt="Director ">
+            <h4> Mr Ajayi Olusola </h4>
+            <p> Director Of Logistics </p>
+        </div>
+
+        <div class="team-card">
+            <img src="network.jpg" alt="Network Engineer">
+            <h4> Mr Olatunde Olayinka </h4>
+            <p> ICT Director</p>
+            <p>Computer Networking & IT Support</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Tri-Vista Business Solutions Ltd.</p>
+</footer>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("menuToggle");
+    const links = document.getElementById("navLinks");
+
+    toggle.addEventListener("click", function () {
+        links.classList.toggle("show");
+    });
+});
+</script>
+
+</body>
+</html>

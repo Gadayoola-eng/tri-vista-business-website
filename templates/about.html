@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tri-Vista Business Solutions Ltd | About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Business.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+<header class="hero">
+    <h1>About Tri-Vista</h1>
+    <p>Driven by innovation. Focused on results.</p>
+</header>
+
+<nav class="navbar">
+    <span class="logo">Tri-Vista</span>
+
+    <span id="menuToggle" class="menu-toggle">☰</span>
+
+    <div id="navLinks" class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/team">Team</a>
+        <a href="/contact">Contact</a>
+    </div>
+</nav>
+
+<section class="container">
+    <h2>Who We Are</h2>
+    <p>
+        Tri-Vista Business Solutions Ltd is a multi-purpose service company
+        committed to providing innovative technology and business support
+        services that help individuals and organizations grow.
+        We combine expertise, creativity, and professionalism to deliver
+        solutions that meet modern business needs.
+    </p>
+</section>
+
+
+<section class="section ">
+    <h2>Our Mission</h2>
+    <p>
+        To deliver reliable, affordable, and high-quality technology and
+        business solutions that empower our clients to succeed.
+    </p>
+</section>
+
+<!-- VISION -->
+<section class="section">
+    <h2>Our Vision</h2>
+    <p>
+        To become a trusted leader in technology and business solutions,
+        recognized for excellence, innovation, and customer satisfaction.
+    </p>
+</section>
+
+<!-- CORE VALUES -->
+<section class="highlight">
+    <h2>Our Core Values</h2>
+    <ul>
+        <li>Integrity & Transparency</li>
+        <li>Innovation & Continuous Improvement</li>
+        <li>Customer Satisfaction</li>
+        <li>Professional Excellence</li>
+        <li>Teamwork & Accountability</li>
+    </ul>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section>
+    <h2>Why Choose Tri-Vista</h2>
+    <p>
+        We understand that every business is unique. Our team works closely
+        with clients to provide customized solutions, timely delivery,
+        and ongoing support.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Tri-Vista Business Solutions Ltd.</p>
+</footer>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("menuToggle");
+    const links = document.getElementById("navLinks");
+
+    toggle.addEventListener("click", function () {
+        links.classList.toggle("show");
+    });
+});
+</script>
+</body>
+</html>
